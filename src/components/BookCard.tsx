@@ -38,7 +38,7 @@ export default function BookCard({ book, onBorrowed }: Props) {
           disabled={book.availableQty < 1 || loading}
           className="text-sm bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          {loading ? '...' : 'Emprestar'}
+          {loading ? '...' : 'Pegar Emprestado'}
         </button>
       </div>
       {error && <p className="text-xs text-red-500">{error}</p>}

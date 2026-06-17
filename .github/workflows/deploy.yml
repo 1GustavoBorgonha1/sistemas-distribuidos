@@ -31,7 +31,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_API_URL: ${{ vars.VITE_API_URL || 'https://api.yan.tec.br' }}
+          VITE_API_URL: ${{ vars.VITE_API_URL || 'https://api.sd.yan.tec.br' }}
 
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
